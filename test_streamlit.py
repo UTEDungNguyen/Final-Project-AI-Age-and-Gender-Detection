@@ -66,7 +66,7 @@ def main():
 
     if selected == 'Upload Image' :
         # load model
-        gender_model = load_model('gender_detection.model')
+        gender_model = load_model('Gender_Detection.h5')
         age_model = load_model('Age_Detection.h5')
 
         st.title(':green[PLEASE UPLOAD YOUR PICTURE TO PREDICT] :frame_with_picture:')
@@ -99,7 +99,7 @@ def main():
                 
     if selected == "Camera Detection" :
         # load model
-        gender_model = load_model('gender_detection.model')
+        gender_model = load_model('Gender_Detection.h5')
         age_model = load_model('Age_Detection.h5')
         st.title(':green[REAL TIME AGE AND GENDER DETECTION] :camera_with_flash:')
         st.subheader("Click on Start to use webcam and detect your age and gender real time :heart_decoration:")
