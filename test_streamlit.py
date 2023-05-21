@@ -64,6 +64,10 @@ def main():
         st.subheader("""
                     [Facebook] : (https://www.facebook.com/phucdung.nguyen.56/) """)
 
+    if selected == 'Poster' :
+        poster = Image.open('Poster_AI_Nguyễn_Phúc_Dũng_20146486_ST5.png')
+        st.image(poster,caption='Poster Age and Gender Detection', width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto" )
+
     if selected == 'Upload Image' :
         # load model
         gender_model = load_model('Gender_Detection.h5')
