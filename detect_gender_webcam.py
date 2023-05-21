@@ -13,7 +13,7 @@ import cvlib as cv
 import streamlit as st
                     
 # load model
-model = load_model('gender_detection.model')
+model = load_model('Gender_Detection.h5')
 age_model = load_model('Age_Detection.h5')
 
 # open webcam
